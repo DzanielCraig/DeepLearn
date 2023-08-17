@@ -25,7 +25,8 @@ class Record():
                 for j in range(y):
                     f.write(f'{para[i,j]},')
                 f.write('\n')
-                
+
+
 def getData(filepath:str,prec=torch.float32):
     #---pandas 读取 xlsx 文件
     source=pd.read_excel(filepath)
